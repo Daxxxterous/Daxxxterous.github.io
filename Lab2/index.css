@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.Centred-up {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	font-family: sans-serif;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-size: 25pt;
+	transform: translate(-50%,-50%)
+}
+
+.image {
+	filter: brightness(65%);
+}
+
+.main-info {
+	padding-left: 150pt;
+	padding-right: 150pt;
+	font-family: sans-serif;
+}
