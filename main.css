@@ -317,7 +317,7 @@ footer {
 
 .map-it {
 	height: 7vw;
-	width: 11vw;
+	width: 10vw;
 }
 }
 
@@ -328,10 +328,10 @@ footer {
 	background-image: url(banner.jpeg);
 	background-size: cover;
 	background-position: center;
-	height: 4vw;
+	height: 12vw;
 	text-align: center;
 	color: white;
-	font-size: 3vw;
+	font-size: 7vw;
 	font-weight: bold;
 }
 
@@ -341,7 +341,7 @@ body {
 	font-family: sans-serif;
 	padding: 0;
 	margin: 0;
-	font-size: 1.5vw;
+	font-size: 4vw;
 }
 
 nav {
@@ -351,7 +351,7 @@ nav {
 	box-shadow: 0 0.2em 1.2em black;
 	background-color: #16191C;
 	display: flex;
-	height: 5vw;
+	height: 15vw;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -359,10 +359,12 @@ nav {
 
 .logo img {
 	height: 100%;
+	width: 100%;
 }
 
 .menu {
 	display: flex;
+	flex-wrap: wrap;
 	font-weight: bold;
 	justify-content: space-evenly;
 	list-style-type: none;
@@ -373,7 +375,7 @@ nav {
 }
 
 .menu li {
-	font-size: 1.3vw;
+	font-size: 3vw;
 	border-right: 0.1em solid white;
 	border-left: 0.1em solid white;
 	padding: 2vw 0.75em 0 0.75em;
@@ -403,21 +405,20 @@ hr {
 }
 
 #main-heading {
-	font-size: 2vw;
+	font-size: 5vw;
 	margin: 0.5em;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 #task h2 {
-	font-size: 1.5vw;
+	font-size: 5vw;
 	text-align: center;
 }
 
 #task img {
 	float: left;
-	height: 20vw;
-	width: 20vw;
+	width: 100%;
 }
 
 #requirements h2 {
@@ -429,7 +430,7 @@ hr {
 	border-right: solid;
 	border-top: solid;
 	font-size: 1em;
-	margin: 0 2em 0 2em;
+	margin: 0;
 	padding: 0.5em 0 0.75em 0;
 	text-align: center;
 }
@@ -447,18 +448,19 @@ hr {
 
 .mee {
 	float: left;
-	height: 27vw;
-	width: 20vw;
+	width: 100%;
+	height: 100%;
 }
 
 .r-m {
 	display: flex;
+	flex-wrap: wrap;
 	border-left: solid;
 	border-bottom: solid;
 	border-right: solid;
 	justify-content: space-evenly;
 	list-style-type: none;
-	margin: 0 2em 0 2em;
+	margin: 0;
 	padding: 0 0 0.5em 0;
 }
 
@@ -475,6 +477,7 @@ hr {
 
 .r-a {
 	display: flex;
+	flex-wrap: wrap;
 	border-bottom: solid;
 	border-left: solid;
 	border-right: solid;
@@ -500,12 +503,7 @@ hr {
 }
 
 .me2 {
-	padding-left: 17.5em;
 	list-style-type: none;
-}
-
-#grading {
-	padding-left: 17.5em;
 }
 
 aside {
@@ -551,25 +549,39 @@ footer {
 	color: white;
 	float: left;
 	margin: 0 0 0 0;
-	padding: 0.5em 1em 0 1em;
+	padding: 2vw;
 	width: 100%;
 }
 
 .contacts {
-	width: 22%;
+	width: 30%;
+}
+
+.map {
+	display: inline-block;
+	float: left;
+	font-size: 1vw;
+	padding-right: 0.5em;
+}
+
+.map-it {
+	height: 7vw;
+	width: 11vw;
 }
 
 .categories {
 	font-size: 0.7em;
 	margin-bottom: 0; 
-	margin-left: 22%;
+	margin-left: 30%;
 	padding-top: 0;
 }
 
 .categories ul {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding-top: 0;
+	padding-left: 0;
 }
 
 .categories ul>li {
@@ -584,6 +596,7 @@ footer {
 .categories h5 {
 	margin-top: 0;
 	text-align: center;
+	font-size: 2vw;
 }
 
 .categories ul>li>a {
@@ -601,6 +614,7 @@ footer {
 }
 
 .quick_links h5 {
+	font-size: 2vw;
 	margin-top: 0;
 	margin-bottom: 0.5em;
 	text-align: center;
@@ -612,6 +626,7 @@ footer {
 	margin-bottom: 0px;
 	margin-top: 0;
 	padding-top: 0.5em;
+	padding-left: 0;
 }
 
 .quick_links ul>li {
@@ -629,18 +644,6 @@ footer {
 .quick_links ul>li>a:hover {
 	color: white;
 	text-decoration: none;
-}
-
-.map {
-	display: inline-block;
-	float: left;
-	font-size: 0.7em;
-	padding-right: 0.5em;
-}
-
-.map-it {
-	height: 7vw;
-	width: 11vw;
 }
 
 }
