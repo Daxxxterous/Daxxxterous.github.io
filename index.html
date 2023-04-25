@@ -1,299 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>CSS Design</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Document</title>
 </head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <div class="banner">Web Programming</div>
-  </header>
+<body style="background-color: hsla(211, 81%, 25%, 0.8);">
+	<div class="container bg-white px-0">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Yermek Dimash CV</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/portfolio.html">Portfolio and Certificates</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-  <!-- Navbar -->
-  <nav>
-      <a class="logo" href="#">
-        <img src="logo.jpg" alt="logo">
-      </a>
-      <ul class="menu">
-        <li><a class="active" href="#task">Task</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#submission">Submission</a></li>
-        <li><a href="#grading">Grading</a></li>
-        <li><a href="#deadline">Deadline</a></li>
-        <li><a href="#">Sign In</a></li>
-      </ul>
-  </nav>
+		<div class="row p-2">
+			<div class="col-lg-4 col-md-4 col-12">
+				<div class="card">
+					<img src="images/me.jpeg" class="card-img-top p-3" alt="profile_image">
+					<div class="card-body">
+						<h3 class="card-title mb-2">Yermek Dimash</h3>
+						<hr>
+						<ul style="list-style: none;">
+							<li>
+								<i class="bi bi-mortarboard-fill"></i>
+								<p class="d-inline-block mb-2">Novice specialist</p>
+							</li>
+							<li>
+								<i class="bi bi-geo-alt-fill"></i>
+								<p class="d-inline-block mb-2">Kazakhstan, Astana</p>
+							</li>
+							<li>
+								<i class="bi bi-telephone-fill"></i>
+								<p class="d-inline-block mb-2">8-705-214-0870</p>
+							</li>
+							<li>
+								<i class="bi bi-envelope-fill"></i>
+								<p class="d-inline-block mb-2">dimash.yr@gmail.com</p>
+							</li>
+							<li>
+								<i class="bi bi-telegram"></i>
+								<p class="d-inline-block mb-2">@WellYouFoundMe</p>
+							</li>
+						</ul>
+						<h4 class="card-title mb-2 mt-4">Languages</h4>
+						<hr>
+						<ul style="list-style: none;">
+							<li>
+								<p class="mb-2">Kazakh</p>
+								<div class="progress" style="height: 16px;">
+									<div class="progress-bar bg-info text-dark" style="width: 100%">Native</div>
+								</div>
+							</li>
+							<li>
+								<p class="mb-2">Russian</p>
+								<div class="progress" style="height: 16px;">
+									<div class="progress-bar bg-info text-dark" style="width: 100%">Native</div>
+								</div>
+							</li>
+							<li>
+								<p class="mb-2">English</p>
+								<div class="progress" style="height: 16px;">
+									<div class="progress-bar bg-info text-dark" style="width: 75%">C1</div>
+								</div>
+							</li>
+						</ul>
 
-  <!-- Main Content -->
-  <section class="main_content">
-    <h1 id="main-heading" class="topic">
-      Lab 4 - Designing with CSS 
-    </h1>
-    <hr>
-    <article id="task">
-      <h2 >Task</h2>
-      <p>
-        <img src="task.jpg" alt="" width="300px">
-        As you have alredy learned in the last lecture, 
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        You need to apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.  
-      </p>
-      <p>
-        There are no 
-        limits to what techniques you use and how you 
-        ultimately solve this task. 
-        However, there are some minimal requirements
-        which are explained in the next section below.
-        <a href="#requirements">Next...</a>
-      </p>
-    </article>
-    <article id="requirements">
-      <h2 >Requirements</h2>
-      <p>
-        The main requirement for this task is to 
-        style this HTML document without any 
-        changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul>
-          <li>
-            You can add <strong>id</strong>
-            and <strong>class</strong> 
-            attributes to the ncessary elements. 
-            </li>
-            <li>
-            You can replace the 
-            images in the defined elements within this document with your
-            own ones. 
-            </li><li>
-            Notice that there is a place for a 
-            large banner on the top of the page,
-            you <strong>must</strong> place an image there only using CSS.
-            </li>
-            <li>
-              You <strong>must</strong> write your names in the specified fields below.
-            </li>
-            <li>You can change the location
-              of in the map below or replace it with the image.
-            </li>
-        </ul>
-      </p>
-      <p class="rm">
-        In your stylesheet you <strong>must</strong>
-         use these selectors:
-        <ul class="r-m">
-          <li>Element selectors;</li>
-          <li>Class selectors;</li>
-          <li>Attribute selectors;</li>
-          <li>ID selectors.</li>
-          <li>Pseudo-class selectors.</li>
-        </ul>
-      </p>
-      <p class="ra">
-        Also, you <strong>must</strong> 
-        use the necessary CSS properties
-        and demonstrate the following changes
-        of the elements:
-        <ul class="r-a">
-          <li>font and background colors;</li>
-          <li>font family and size;</li>
-          <li>margin, padding and borders;</li>
-          <li>image sizes (width and height);</li>
-          <li>text alignment (horizontal and vertical);</li>
-        </ul>
-        Additionally, a special focus <strong>must</strong> 
-        be done to the menu links.        
-        They need to change their status appropriately 
-        (active, hover, visited)
-        as well as be placed in a natural way,
-        i.e. horizontally or vertically. 
-        <a href="#submission">Next...</a>
-      </p>
-    </article>
-    <article id="submission">
-      <h2>Submission</h2>
-      <p>
-       As usual, you <strong>must</strong> submit 
-       your work via Github. All the files and images need to go to 
-       your <strong> <i>username.github.io</i> </strong>repository. 
-       Also, this page must be available 
-       through this domain name.
-      </p>
-      <h3>Info</h3>
-      <p>
-         Insert an image of yourself here.
-         <img class="mee" src="me.jpeg" alt="" height="390px">
-
-        <ul class="me2">
-          <li><strong>Yermek Dimash</strong></li>
-        </ul>
-      </p>
-    </article>
-    <article id="grading">
-      <h2>Grading</h2>
-      For this assignment you will get 
-      <strong>70 points</strong>  in total.
-      The final score is the sum of the points 
-      for each of the criteria below.
-      <table>
-        <tr>
-          <th>Criteria</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>CSS file is linked to the document</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Banner image is present</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Menu is styles appropriately</td>
-          <td>5 pts</td>
-        </tr>
-        
-        <tr>
-          <td>Photo is present </td>
-          <td>5 pts</td>
-        </tr>
-         <tr>
-          <td>HTML file is unchanged</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Required selectors are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Required CSS properties are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website is available online</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website looks nice and not broken</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Extra cool stuff is used</td>
-          <td>5 pts</td>
-        </tr>
-        </tr>
-      </table>
-    </article>
-  </section>
-
-  <!-- Aside Information -->
-  <aside>
-    <h3 class="impo">Important</h3>
-    <section class="aside_content">
-      <article id="deadline">
-        <h4>Deadlines:</h4>
-        <ul>
-          <li>Soft deadline: Jan. 31, 2023, 23:59</li>
-          <li>Hard deadline: Feb. 2, 2023, 23:59</li>
-        </ul>
-        <p>
-        <a href="#">More...</a>
-      </article>
-      </section>
-     
-        <h3>Some Dummy Content</h3>
-       <section class="dummy">
-        <article>
-        <h4>Article 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 3</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-    </section>
-  </aside>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="contacts">
-      <div class="map">
-        <h5>Contacts</h5>
-        <p>
-          Nazarbayev University <br>
-          53 Kabanbay Batyr ave. <br>
-          Block 7, Room 7.422 <br>
-          Ph.: +7-7172-123-4567 <br>
-          <a href="mailto:info@naturallyinspired.com" class="email">
-            info@naturallyinspired.com
-          </a>
-        </p>
-      </div>
-      <div class="map">
-          <iframe class="map-it" src="https://maps.google.com/maps?q=Nazarbayev%20university,%20Nur-Sultan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-      </div>
-    </div>
-    <div class="categories">
-      <h5>Top 10 Categories</h5>
-      <ul>
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li><a href="#">Category 3</a></li>
-        <li><a href="#">Category 4</a></li>
-        <li><a href="#">Category 5</a></li>
-        <li><a href="#">Category 6</a></li>
-        <li><a href="#">Category 7</a></li>
-        <li><a href="#">Category 8</a></li>
-        <li><a href="#">Category 9</a></li>
-        <li><a href="#">Category 10</a></li>
-      </ul>
-    </div>
-    <div class="quick_links">
-      <h5>Quick Links</h5>
-      <ul>
-        <li><a href="#">Item1</a></li>
-        <li><a href="#">Item2</a></li>
-        <li><a href="#">Item3</a></li>
-        <li><a href="#">Item4</a></li>
-        <li><a href="#">Item5</a></li>
-        <li><a href="#">Item6</a></li>
-      </ul>
-    </div>
-  </footer>
+						<a href="#labskills" data-bs-toggle="collapse" aria-expanded="false" class="collapse_ref h5">
+						Laboratory skills<span class="dropdown-arrow"></span></a>
+						<div class="collapse mt-2 mb-0" id="labskills">
+							<ul class="d-flex flex-wrap mb-0" style="list-style: none;">
+								<li class="skl">Cell culturing</li>
+								<li class="skl">Spectrophotometry</li>
+								<li class="skl">Chromatography</li>
+								<li class="skl">ELISA</li>
+								<li class="skl">Electrophoresis</li>
+							</ul>
+						</div>
+						<br>
+						<br>
+						<a href="#digitalskills" data-bs-toggle="collapse" aria-expanded="false" class="collapse_ref h5">
+						PC skills<span class="dropdown-arrow"></span></a>
+						<div class="collapse mt-2" id="digitalskills">
+							<ul class="d-flex flex-wrap" style="list-style: none;">
+								<li class="dgl">Photoshop CS6</li>
+								<li class="dgl">MS Office</li>
+								<li class="dgl">Google docs</li>
+								<li class="dgl">Canva</li>
+								<li class="dgl">Front-end</li>
+							</ul>
+						</div>
+						<br>
+						<br>
+						<a href="#soft" data-bs-toggle="collapse" aria-expanded="false" class="collapse_ref h5">Soft skills
+						<span class="dropdown-arrow"></span></a>
+						<div class="collapse mt-2" id="soft">
+							<ul class="d-flex flex-wrap" style="list-style: none;">
+								<li class="ssl">Quick learner</li>
+								<li class="ssl">Teamwork</li>
+								<li class="ssl">Work ethics</li>
+								<li class="ssl">Communication</li>
+								<li class="ssl">Responsibility</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-12 p-3">
+				<h1 class="text-center mb-4">About me</h1>
+				<p style="font-size: 18px">My name is Yermek Dimash, I grew up in Taldykorgan, and then graduated from Nazarbayev University. I have a bachelor's degree in biology and have practical experience in the microbiological and chemical laboratory at the university. However, the range of my knowledge is not limited to working in the laboratory. I can write frontend for websites, work in graphic editors, create spectacular presentations and work with AI. I also have experience working in different directions.</p>
+				<h2 class="my-5 text-center">Work experience</h2>
+				<div class="row">
+					<div class="col-12">
+						<ul class="timeline">
+							<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+								<h2 class="h5 mb-0">Consultant</h2>
+								<span class="small text-gray">August 2021</span>
+								<p class="my-2" style="font-weight: 500;">Almaty Region Election Commission</p>
+								<ul class="text-small mt-2 font-weight-ligh invis">
+									<li>Checked, compared, sorted and formatted lists of candidates in Excel</li>
+									<li>Issued a fixed number of ballots to polling stations</li>
+									<li>Accompanied documents for verification and contracts for signing</li>
+								</ul>
+							</li>
+							<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+								<h2 class="h5 mb-0">Waiter</h2>
+								<span class="small text-gray">June 2021 — August 2021</span>
+								<p class="my-2" style="font-weight: 500;">Banka bar</p>
+								<ul class="text-small mt-2 font-weight-light invis">
+									<li>Studied and put into practice the standards of service and building communication with guests</li>
+									<li>As a senior waiter, I made sure that the staff performed their duties properly</li>
+								</ul>
+							</li>
+							<li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+								<h2 class="h5 mb-0">Manager</h2>
+								<span class="small text-gray">July 2017 — August 2017</span>
+								<p class="my-2" style="font-weight: 500;">"SpeakEasy" Language Center</p>
+								<ul class="text-small mt-2 font-weight-light invis">
+									<li>Kept records and coordinated the lessons</li>
+									<li>Warm calls</li>
+									<li>Maintained social media accounts</li>
+									<li>Kept a customer database in MS Excel</li>
+									<li>Held Speaking club meetings</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="my-5 text-center">Education</h2>
+				<div class="card-group g-1">
+					<div class="card mb-3 d-flex border-0" style="min-width: 340px;">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/nis.jpg" class="img-fluid rounded-start" alt="...">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Nazarbayev Intellectual School</h5>
+									<p class="card-text">Graduated from school with <strong>132</strong> UNT points. I was the leader of the "shanyrak", a member of the KVN, TED clubs and a member of the school government.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-3 border-0" style="min-width: 340px;">
+						<div class="row g-0">
+							<div class="col-4">
+								<img src="images/nu.jpg" class="img-fluid rounded-start" alt="...">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Nazarbayev University</h5>
+									<p class="mb-1" style="font-weight: 600">School of Sciences and Humanities, Biology</p>
+									<p class="card-text">I received a comprehensive international-level education entirely in English. Was a member of the board games club.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer style="background-color: #454545">
+		<div class="container-fluid">
+			<div class="row p-2 text-light">
+				<div class="col-md-6">
+					<h3>Contact me!</h3>
+					<p>If you have any questions or suggestions, please contact me at any convenient time from 9 am to 6 pm on weekdays. I will be glad to meet new opportunities and acquaintances!</p>
+				</div>
+				<div class="col-md-6">
+					<h3>Regarding the website</h3>
+					<p>I wrote the website entirely by myself, than I wanted to demonstrate my knowledge in the field of frontend development. If you want to use my code, please contact me first.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="main.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
